@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Начальная страница</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body background="./img/bg.jpg">
+<nav class="navbar navbar-expand-lg bg-warning bg-body-tertiary">
+    <div class="container-fluid bg-warning">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="navbar-brand" href="index.html">
+        <img alt="Brand" class="img-responsive" src="./img/logo.jpg">
+      </a>
+        <a class="nav-link" href="index.html">ГЛАВНАЯ</a>
+        <a class="nav-link" href="contacts.html">КОНТАКТЫ</a>
+        <a class="nav-link active" aria-current="page" href="submit.html"><u>ПРЕДЛОЖЕНИЕ</u></a>
+        <a class="nav-link" href="shop.html">МАГАЗИН</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container">
+    <div class="card">
+        <h2> Заявка:</h2>
+        <form action="https://www.bing.com/" id="UserEnter" name="UserEnter" target="_blank">
+            <p> Введите ваше имя: <input type="Text" name="name" size=20 value="Иван"></p>
+            <p> Введите вашу фамилию: <input type="Text" name="surname" size=20 value="Иванов"></p>
+            <input type="hidden" name="function" value="page">
+            <input type="hidden" name="page_id" value="9">
+            <p>Введите дату, в которую вы хотите к нам прийти: <input type="date" name="data" value='2023-12-01'></p>
+            <p>Выберите часть дня, в которую в хотите к нам прийти:</p>
+            <p>
+                <input type="Radio" name="utrom" value="vpervie">Утром
+                <input type="Radio" name="dnem" value="periodicheski">Днём
+            </p>
+            <p>Цель вашего визита</p>
+            <p>
+                <input type="Checkbox" name="abcent" value="0">Покупка книги
+                <input type="Checkbox" name="vodka" value="0"> Переговоры о печати
+                <input type="Checkbox" name="viski" value="0"> Иное </p>
+            <input type="Submit" name="submit" value="Отправить">
+        </form>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous"></script>
+</body>
